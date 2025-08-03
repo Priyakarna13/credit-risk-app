@@ -16,7 +16,7 @@ This is an interactive Shiny web app that predicts whether a customer poses a **
 👉 [Click here to try it out!](https://priyakarna.shinyapps.io/credit-risk-ml-finbench/)
 
 ### 📂 Project Structure
-
+   ```bash
 credit-risk-app/
 ├── app.R                  # Shiny UI + server script
 ├── credit-risk-ml-finbench.Rproj  # RStudio project file (optional)
@@ -25,20 +25,20 @@ credit-risk-app/
 ├── model/
 │   └── xgb_model.rds      # Trained XGBoost model
 ├── outputs/               # Saved plots, AUC summary, etc.
-
+```
 ---
 
 ## How to Run Locally
 
 1. Clone this repository:
-   ```bash
+ ```bash
    git clone https://github.com/yourusername/credit-risk-app.git
-   ```
+ ```
 2. Open R or RStudio, install packages:
 ```bash
 install.packages(c("shiny", "xgboost"))
    ```
-Run the app:
+3. Run the app:
 ```bash
 shiny::runApp("credit-risk-app")
    ```
@@ -47,13 +47,13 @@ shiny::runApp("credit-risk-app")
 
 ## How to Deploy on shinyapps.io
 
-# One-time setup:
+### One-time setup:
 ```bash
 rsconnect::setAccountInfo(name='yourname',
                           token='abc123',
                           secret='secret456')
    ```
-# Deploy:
+### Deploy:
 ```bash
 rsconnect::deployApp('credit-risk-app')
    ```
