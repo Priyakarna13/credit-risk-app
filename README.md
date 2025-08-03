@@ -1,20 +1,21 @@
-# 🧠 Credit Default Risk Predictor
+## Credit Risk Prediction App
 
-This is an interactive **Shiny web application** that predicts the risk of credit card default based on user input.  
-It uses a pre-trained **XGBoost model** trained on the UCI Credit Card dataset.
-
----
-
-## 🚀 Features
-
-- Predict default probability based on user-entered financial & demographic details
-- Clean UI with risk labels ("High Risk" / "Low Risk")
-- Mobile-friendly and responsive layout
-- Built with R + Shiny + XGBoost
+This is an interactive Shiny web app that predicts whether a customer poses a **credit risk** based on their input financial behavior. It uses a trained **XGBoost model** built on real-world credit card data.
 
 ---
 
-## 📦 Folder Structure
+### Features
+- Predict customer credit risk with high accuracy
+- Clean, responsive UI (mobile & desktop)
+- Real-time prediction using XGBoost model
+- Built in R + Shiny, deployed via ShinyApps.io
+
+---
+
+### Try the Live App
+👉 [Click here to try it out!](https://priyakarna.shinyapps.io/credit-risk-ml-finbench/)
+
+### 📂 Project Structure
 
 credit-risk-app/
 ├── app.R                  # Shiny UI + server script
